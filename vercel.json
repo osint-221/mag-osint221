@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "magazine.html", "use": "@vercel/static" },
+    { "src": "**/*.{png,jpg,jpeg,gif,svg,ico,html,css,js}", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/$", "dest": "/magazine.html" },
+    { "src": "/(.*)", "dest": "/$1" }
+  ]
+}
