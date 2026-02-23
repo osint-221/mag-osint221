@@ -1,0 +1,14 @@
+ .vscode/
+ node_modules/
+ __pycache__/
+ *.pyc
+ .env
+ *.log
+ Thumbs.db
+ .DS_Store# OSINT-221 Magazine Gitignore
+*.zip
+*.rar
+node_modules/
+.vscode/
+.DS_Store
+Thumbs.db
