@@ -361,5 +361,20 @@
         <i class="material-icons">download</i>
         Télécharger le PDF
     </a>
+    <script>
+        // If the local PDF is not available on the deployed site, fall back to GitHub raw URL
+        (function(){
+            const a = document.querySelector('.download-fab');
+            if (!a) return;
+            const local = a.getAttribute('href');
+            const raw = 'https://raw.githubusercontent.com/osint-221/mag-osint221/main/mag-osint221-022026.pdf';
+            // try HEAD first
+            fetch(local, { method: 'HEAD' }).then(resp => {
+                if (!resp.ok) {
+                    a.href = raw;
+                }
+            }).catch(()=>{ a.href = raw; });
+        })();
+    </script>
 </body>
 </html>
