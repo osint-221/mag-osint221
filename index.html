@@ -154,6 +154,41 @@
             .download-fab { right: 12px; bottom: 12px; padding: 10px 12px; font-size: 13px; }
             .footer-minimal { padding-bottom: 20px; }
             img { max-width: 100%; height: auto; }
+
+            /* Ensure each article stacks cleanly and CTAs are touch-friendly */
+            .news-card { align-items: stretch; }
+            .news-card .card-body { padding: 12px; }
+            .card-title { font-size: 16px; }
+            .card-text { font-size: 14px; }
+            .card-link {
+                display: block;
+                width: 100%;
+                text-align: center;
+                padding: 10px 12px;
+                border-radius: 8px;
+                background: var(--primary);
+                color: #051321;
+                font-weight: 800;
+                font-size: 14px;
+                text-decoration: none;
+                margin-top: 10px;
+                box-shadow: 0 6px 14px rgba(0,0,0,0.18);
+            }
+            .card-link i { font-size: 16px; margin-left: 6px; }
+
+            /* Make community CTA and banners full-width and easier to tap */
+            .discord-cta, .email-banner {
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                padding: 14px 16px;
+                border-radius: 10px;
+                font-size: 15px;
+                gap: 10px;
+            }
+            .discord-cta { background: #ffffff; color: #050E17; }
+            .discord-cta:hover { background: var(--primary); color: #050E17; transform: none; }
         }
         /* Floating download button */
         .download-fab {
