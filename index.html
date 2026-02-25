@@ -160,21 +160,23 @@
             .news-card .card-body { padding: 12px; }
             .card-title { font-size: 16px; }
             .card-text { font-size: 14px; }
+            /* Keep article 'Lire' links as in desktop (no full-width CTA) */
             .card-link {
-                display: block;
-                width: 100%;
-                text-align: center;
-                padding: 10px 12px;
-                border-radius: 8px;
-                background: var(--primary);
-                color: #051321;
-                font-weight: 800;
-                font-size: 14px;
+                color: var(--primary);
                 text-decoration: none;
-                margin-top: 10px;
-                box-shadow: 0 6px 14px rgba(0,0,0,0.18);
+                font-size: 10px;
+                font-weight: 700;
+                display: flex;
+                align-items: center;
+                gap: 4px;
+                text-transform: uppercase;
+                background: transparent;
+                width: auto;
+                padding: 0;
+                margin-top: 8px;
+                box-shadow: none;
             }
-            .card-link i { font-size: 16px; margin-left: 6px; }
+            .card-link i { font-size: 14px; margin-left: 6px; }
 
             /* Make community CTA and banners full-width and easier to tap */
             .discord-cta, .email-banner {
