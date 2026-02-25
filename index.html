@@ -133,6 +133,28 @@
         @media (max-width: 850px) {
             .page { padding: 30px 20px; } .editorial-text { column-count: 1; } .news-grid { grid-template-columns: repeat(2, 1fr); } .lab-grid { grid-template-columns: 1fr; } .challenge-container { grid-template-columns: 1fr; }
         }
+        /* Mobile (smartphone) specific adjustments */
+        @media (max-width: 600px) {
+            html, body { font-size: 15px; }
+            .magazine-container { height: auto; overflow-y: auto; scroll-snap-type: none; padding-bottom: 90px; }
+            .page { min-height: auto; max-width: 100%; padding: 18px 14px; border-left: none; border-right: none; margin: 0; }
+            .page-content { width: 100%; padding: 0; }
+            .cover-title { font-size: 34px; line-height: 1.05; }
+            .cover-logo { width: 90px; margin-bottom: 18px; }
+            .section-title { font-size: 22px; }
+            .editorial-text { column-count: 1; font-size: 15px; gap: 18px; }
+            .news-grid { grid-template-columns: 1fr; gap: 12px; }
+            .lab-grid { grid-template-columns: 1fr; gap: 12px; }
+            .challenge-container { grid-template-columns: 1fr; gap: 16px; }
+            .card-img { height: auto; max-height: 220px; object-fit: cover; }
+            .card-body { padding: 10px; }
+            .lab-card { padding: 12px; }
+            .quote-block { font-size: 20px; padding: 18px 0; }
+            .scroll-hint { display: none; }
+            .download-fab { right: 12px; bottom: 12px; padding: 10px 12px; font-size: 13px; }
+            .footer-minimal { padding-bottom: 20px; }
+            img { max-width: 100%; height: auto; }
+        }
         /* Floating download button */
         .download-fab {
             position: fixed;
